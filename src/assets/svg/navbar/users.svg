@@ -1,0 +1,20 @@
+<svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="users">
+<g id="Oval">
+<ellipse cx="9.10031" cy="7.39175" rx="3.66667" ry="3.66667" transform="rotate(-0.255259 9.10031 7.39175)" stroke="#8692D0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="9.10031" cy="7.39175" rx="3.66667" ry="3.66667" transform="rotate(-0.255259 9.10031 7.39175)" stroke="white" stroke-opacity="0.4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="Path">
+<path d="M3.65754 20.2495L3.64937 18.4161C3.64035 16.3911 5.27464 14.7422 7.29966 14.7332L10.9663 14.7168C12.9913 14.7078 14.6402 16.3421 14.6493 18.3671L14.6574 20.2005" stroke="#8692D0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3.65754 20.2495L3.64937 18.4161C3.64035 16.3911 5.27464 14.7422 7.29966 14.7332L10.9663 14.7168C12.9913 14.7078 14.6402 16.3421 14.6493 18.3671L14.6574 20.2005" stroke="white" stroke-opacity="0.4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="Path_2">
+<path d="M15.5011 3.81567C17.1254 4.22385 18.2666 5.6807 18.2741 7.35544C18.2816 9.03018 17.1533 10.4971 15.5328 10.9198" stroke="#8692D0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15.5011 3.81567C17.1254 4.22385 18.2666 5.6807 18.2741 7.35544C18.2816 9.03018 17.1533 10.4971 15.5328 10.9198" stroke="white" stroke-opacity="0.4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="Path_3">
+<path d="M20.1574 20.1759L20.1492 18.3426C20.1322 16.6785 18.9967 15.2345 17.3835 14.8257" stroke="#8692D0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20.1574 20.1759L20.1492 18.3426C20.1322 16.6785 18.9967 15.2345 17.3835 14.8257" stroke="white" stroke-opacity="0.4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</svg>
