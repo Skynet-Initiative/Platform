@@ -1,0 +1,16 @@
+<svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="headphones">
+<g id="Rectangle">
+<rect x="4.67268" y="12.8135" width="4.58333" height="6.41667" rx="2" transform="rotate(-0.255259 4.67268 12.8135)" stroke="#8692D0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="4.67268" y="12.8135" width="4.58333" height="6.41667" rx="2" transform="rotate(-0.255259 4.67268 12.8135)" stroke="white" stroke-opacity="0.4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="Rectangle_2">
+<rect x="14.7559" y="12.7686" width="4.58333" height="6.41667" rx="2" transform="rotate(-0.255259 14.7559 12.7686)" stroke="#8692D0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="14.7559" y="12.7686" width="4.58333" height="6.41667" rx="2" transform="rotate(-0.255259 14.7559 12.7686)" stroke="white" stroke-opacity="0.4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="Path">
+<path d="M4.68086 14.647L4.6686 11.897C4.65056 7.84693 7.91915 4.54909 11.9692 4.53105C16.0192 4.51301 19.3171 7.78159 19.3351 11.8316L19.3474 14.5816" stroke="#8692D0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4.68086 14.647L4.6686 11.897C4.65056 7.84693 7.91915 4.54909 11.9692 4.53105C16.0192 4.51301 19.3171 7.78159 19.3351 11.8316L19.3474 14.5816" stroke="white" stroke-opacity="0.4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</svg>
