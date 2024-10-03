@@ -35,6 +35,11 @@ const Header = () => {
 
         <Image src={NotificationImage} alt="" />
         <Image src={ProfileImage} alt="" />
+        <a href="#">
+          <div className="flex h-10 w-36 items-center justify-center rounded-3xl bg-blue-300 text-xs text-white">
+            <p>JOIN NOW</p>
+          </div>
+        </a>
       </div>
     </div>
   );
