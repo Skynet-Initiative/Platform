@@ -2,11 +2,11 @@
 
 import EnglishFlag from "@/assets/images/flags/uk.png";
 import Chevron from "@/assets/svg/chevron";
-import MoonImage from "@/assets/svg/moon.svg";
 import NotificationImage from "@/assets/svg/notification.svg";
 import ProfileImage from "@/assets/svg/profile.svg";
 import SearchIcon from "@/assets/svg/search.svg";
 import Image from "next/image";
+import ChangeMod from "../../form/switchers/changeMod";
 
 const Header = () => {
   return (
@@ -27,11 +27,7 @@ const Header = () => {
           <Chevron />
         </div>
 
-        <div className="z-0 flex h-[2rem] w-[3.5rem] flex-row items-center justify-end rounded-[1rem] bg-white">
-          <div className="z-10 mr-[2px] flex h-[1.75rem] w-[1.75rem] items-center justify-center rounded-[0.875rem] bg-black">
-            <Image src={MoonImage} alt="" />
-          </div>
-        </div>
+        <ChangeMod />
 
         <Image src={NotificationImage} alt="" />
         <Image src={ProfileImage} alt="" />
