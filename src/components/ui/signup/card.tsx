@@ -8,7 +8,7 @@ import CardForm from "../form/card";
 import { Label } from "../form/label";
 import LinkUnderline from "../form/link_underline";
 
-export default function SigninCard() {
+export default function SignupCard() {
   const [email, setEmail] = useState("");
   const [rememberMe, setRememberMe] = useState(false);
 

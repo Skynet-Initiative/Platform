@@ -1,11 +1,11 @@
 import PresentationSide from "@/components/ui/presentationSide";
-import SigninUpCard from "@/components/ui/signup/card";
+import VerifcationEmailCard from "@/components/ui/signup/verification/card";
 
-export default function Signup() {
+export default function VerificationSignup() {
   return (
     <div className="flex bg-gradient-1">
       <PresentationSide />
-      <SigninUpCard />
+      <VerifcationEmailCard />
     </div>
   );
 }
