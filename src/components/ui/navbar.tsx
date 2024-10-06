@@ -1,7 +1,6 @@
 "use client";
 
 import Chevron from "@/assets/svg/chevron";
-import Logo from "@/assets/svg/logo.svg";
 import PageKitImage from "@/assets/svg/navbar/brand-pagekit.svg";
 import ComponentsImage from "@/assets/svg/navbar/components.svg";
 import FileImage from "@/assets/svg/navbar/file-text.svg";
@@ -14,6 +13,7 @@ import ShoppingImage from "@/assets/svg/navbar/shopping.svg";
 import UsersImage from "@/assets/svg/navbar/users.svg";
 import { Bg } from "@/styles/colors";
 import Image from "next/image";
+import FullLogo from "./fullLogo";
 
 const categories = [
   {
@@ -52,10 +52,7 @@ export default function Navbar() {
   return (
     <div className="w-[20%] rounded-l-[0px] rounded-r-[20px] bg-gradient-3">
       <div className="my-10 inline-flex w-full flex-col items-center justify-center gap-2">
-        <Image src={Logo} alt="Skynet" width={37} />
-        <p className="font-satoshi text-[20px] font-bold normal-case leading-[22px] text-white">
-          Skynet
-        </p>
+        <FullLogo width={37} text_size={20} />
       </div>
 
       {categories.map((category, index) => (

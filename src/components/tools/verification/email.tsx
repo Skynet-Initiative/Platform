@@ -4,7 +4,7 @@ const emailSchema = z.string().email();
 
 export default function isEmailValid(email: string): boolean {
   try {
-    emailSchema.parse(email);
+    emailSchema.parse(email.trim());
     return true;
   } catch (error) {
     if (error instanceof z.ZodError) {

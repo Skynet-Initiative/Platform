@@ -47,7 +47,7 @@ export default function SigninCard() {
         <AnotherOption
           text="Don’t have an account?"
           name_page="Sign up"
-          url="#"
+          url="/signup"
         />
       </form>
     </CardForm>
