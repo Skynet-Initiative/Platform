@@ -1,7 +1,7 @@
 "use client";
 import isEmailValid from "@/components/tools/verification/email";
 import { useCheckboxStore, useEmailStore } from "@/tools/store"; // Importe le store Zustand pour l'email
-import { useRouter } from "next/navigation";
+import { useRouter } from "next/router";
 import { useState } from "react";
 import AnotherOption from "../form/another_option";
 import GoogleButton from "../form/buttons/google_sign_in";

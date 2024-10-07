@@ -1,19 +1,18 @@
-"use client";
 import { useCheckboxStore } from "@/tools/store";
-import clsx from "clsx"; // Importation de clsx
 import { Checkbox } from "./checkbox";
-import Selector from "./selector"; // Assurez-vous d'importer le composant Selector
+import Input from "./input";
+import Selector from "./selector";
 
 interface LabelProps {
   text?: string;
   type?: "email" | "text" | "checkbox" | "selector";
   placeholder?: string;
   className?: string;
-  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  value?: string | boolean; // Autoriser string ou boolean pour gérer checkbox et autres
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void; // Rendre requise
+  value?: string | boolean;
   children?: React.ReactNode;
   name?: string;
-  if_error?: boolean; // Nouvelle propriété pour gérer les erreurs
+  if_error?: boolean;
   submit?: boolean;
 }
 
@@ -67,24 +66,15 @@ export const Label = ({
     <label className="flex flex-col">
       <span className="mb-2 text-sm text-grey-100">
         {text} <span className="text-red-400">*</span>
+        <Input
+          type={type}
+          placeholder={placeholder || ""}
+          value={typeof value === "string" ? value : ""}
+          onChange={onChange}
+          errorStyle={errorStyle}
+          name={name}
+        />
       </span>
-      <input
-        autoComplete="off"
-        type={type}
-        placeholder={placeholder}
-        value={typeof value === "string" ? value : ""} // Assurez-vous que value est string
-        onChange={onChange}
-        className={clsx(
-          "flex w-full items-center gap-[0.5rem] self-stretch rounded-[0.5rem] border border-grey-300 bg-transparent-8 p-[0.5rem] pl-[1rem] text-white shadow-md outline-none",
-          errorStyle,
-        )}
-        name={name}
-      />
-      <style jsx>{`
-        input::placeholder {
-          @apply font-sm bg-grey-200 font-inter leading-6;
-        }
-      `}</style>
     </label>
   );
 };

@@ -9,7 +9,7 @@ import Image from "next/image";
 export default function TemplateSignup() {
   return (
     <div className="flex h-[1500px] w-screen items-center justify-center bg-gradient-1">
-      <div className="flex w-[455px] flex-col gap-6 bg-transparent-4 p-8">
+      <div className="flex w-[455px] flex-col gap-6 rounded-md bg-transparent-4 p-8">
         <div className="flex items-center justify-center gap-2 py-[10px]">
           <FullLogo width={39} text_size={26} />
         </div>

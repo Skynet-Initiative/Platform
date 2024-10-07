@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 const Switcher = () => {
-  const [isOn, setIsOn] = useState(false);
+  const [isOn, setIsOn] = useState(true);
 
   const handleToggle = () => {
     setIsOn(!isOn);
