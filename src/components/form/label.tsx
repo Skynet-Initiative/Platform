@@ -1,3 +1,5 @@
+"use client";
+
 import { useCheckboxStore } from "@/tools/store";
 import { Checkbox } from "./checkbox";
 import Input from "./input";
@@ -8,7 +10,7 @@ interface LabelProps {
   type?: "email" | "text" | "checkbox" | "selector";
   placeholder?: string;
   className?: string;
-  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void; // Rendre requise
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   value?: string | boolean;
   children?: React.ReactNode;
   name?: string;
