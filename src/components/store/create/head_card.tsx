@@ -1,4 +1,4 @@
-import { StepsProgressBar } from "@/components/ui/stepprogressbar";
+import { StepsProgressBar } from "@/components/stepprogressbar";
 
 interface HeadCardProps {
   children: React.ReactNode;

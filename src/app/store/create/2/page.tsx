@@ -1,7 +1,7 @@
-import Navbar from "@/components/ui/navbar";
-import CardStoreCreate2 from "@/components/ui/store/create/2/card";
-import Footer from "@/components/ui/store/create/footer";
-import Header from "@/components/ui/store/create/header";
+import Navbar from "@/components/navbar";
+import CardStoreCreate2 from "@/components/store/create/2/card";
+import Footer from "@/components/store/create/footer";
+import Header from "@/components/store/create/header";
 
 export default function CreatStore2() {
   return (

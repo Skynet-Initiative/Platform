@@ -1,6 +1,6 @@
 "use client";
 
-import CardForm from "@/components/ui/form/card";
+import CardForm from "@/components/form/card";
 import { useEmailStore } from "@/tools/store"; // Assurez-vous d'importer le store correctement
 import ParticleSwarmLoader from "../../animations/email";
 

@@ -8,7 +8,7 @@ interface LabelProps {
   type?: "email" | "text" | "checkbox" | "selector";
   placeholder?: string;
   className?: string;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void; // Rendre requise
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void; // Rendre requise
   value?: string | boolean;
   children?: React.ReactNode;
   name?: string;

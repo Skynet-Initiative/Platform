@@ -1,4 +1,4 @@
-import Switcher from "@/components/ui/form/switchers/normal";
+import Switcher from "@/components/form/switchers/normal";
 import HeadCard from "../head_card";
 import Pagination from "../pagination";
 

@@ -1,5 +1,5 @@
-import PresentationSide from "@/components/ui/presentationSide";
-import SigninUpCard from "@/components/ui/signup/card";
+import PresentationSide from "@/components/presentationSide";
+import SigninUpCard from "@/components/signup/card";
 
 export default function Signup() {
   return (

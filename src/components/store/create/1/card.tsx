@@ -1,5 +1,5 @@
 import UploadImage from "@/assets/svg/upload.svg";
-import { Label } from "@/components/ui/form/label";
+import { Label } from "@/components/form/label";
 import Image from "next/image";
 import HeadCard from "../head_card";
 import Pagination from "../pagination";

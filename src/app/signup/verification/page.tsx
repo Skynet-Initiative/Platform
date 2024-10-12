@@ -1,5 +1,5 @@
-import PresentationSide from "@/components/ui/presentationSide";
-import VerifcationEmailCard from "@/components/ui/signup/verification/card";
+import PresentationSide from "@/components/presentationSide";
+import VerifcationEmailCard from "@/components/signup/verification/card";
 
 export default function VerificationSignup() {
   return (

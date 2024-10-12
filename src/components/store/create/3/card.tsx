@@ -1,6 +1,6 @@
 "use client";
 
-import Input from "@/components/ui/form/input";
+import Input from "@/components/form/input";
 import ChoiceStatut from "../choice_statut";
 import HeadCard from "../head_card";
 import Pagination from "../pagination";

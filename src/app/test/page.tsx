@@ -1,8 +1,8 @@
 "use client";
 import PlusImage from "@/assets/svg/plus.svg";
 import UploadImage from "@/assets/svg/upload.svg";
-import Selector from "@/components/ui/form/selector";
-import Switcher from "@/components/ui/form/switchers/normal";
+import Selector from "@/components/form/selector";
+import Switcher from "@/components/form/switchers/normal";
 import Image from "next/image";
 
 const Tests = () => {
@@ -84,9 +84,7 @@ const Tests = () => {
           <div className="flex gap-3">
             <Selector
               name="10"
-              className="bg-[rgba(255,255,255,0.05)] font-regular"
-              font="sans"
-              font_size="16"
+              className="bg-[rgba(255,255,255,0.05)] font-sans text-[16px]"
               width={50}
             />
             <div className="flex h-10 w-[175px] items-center justify-center gap-1 rounded-md bg-blue-300">

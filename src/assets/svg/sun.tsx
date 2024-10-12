@@ -13,7 +13,7 @@ export default function SunImage({
     <svg
       width={width}
       height={width}
-      viewBox={`0 0 ${width} ${width}`}
+      viewBox={`0 0 24 24`}
       fill={fill}
       xmlns="http://www.w3.org/2000/svg"
     >

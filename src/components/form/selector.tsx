@@ -6,8 +6,7 @@ interface SelectorProps {
   width?: number;
   height?: number;
   className?: string;
-  font?: string;
-  font_size?: string;
+  width_image?: string;
 }
 
 const Selector = ({
@@ -15,13 +14,12 @@ const Selector = ({
   width,
   height,
   className,
-  font,
-  font_size,
+  width_image = "19",
 }: SelectorProps) => {
   return (
     <div
       className={clsx(
-        `flex items-center justify-between rounded-lg px-4 py-[13px]`,
+        `flex items-center justify-between rounded-lg px-4 py-[13px] font-sans text-[13px]`,
         className,
       )}
       style={{
@@ -30,18 +28,14 @@ const Selector = ({
       }}
     >
       <p
-        className={clsx(
-          `font-normal leading-snug text-white/80`,
-          font ? `font-${font}` : `font-satoshi`,
-        )}
+        className={clsx(`leading-snug text-white/80`)}
         style={{
-          fontSize: font_size ? `${font_size}px` : "13px",
           width: width ? `${width}px` : "100%",
         }}
       >
         {name}
       </p>
-      <Chevrown stroke="white" />
+      <Chevrown stroke="white" size={width_image} />
     </div>
   );
 };

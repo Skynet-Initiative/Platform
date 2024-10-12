@@ -47,6 +47,9 @@ const config: Config = {
         red: {
           400: "#d67367",
         },
+        green: {
+          300: "#28C76F",
+        },
       },
     },
   },
