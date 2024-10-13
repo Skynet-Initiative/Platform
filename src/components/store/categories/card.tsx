@@ -1,47 +1,37 @@
 "use client";
 import Input from "@/components//form/input";
 import Selector from "@/components/form/selector";
-import Columns from "@/components/table/columns";
+import CategorieRows from "@/components/table/categorie_rows";
 import FooterTable from "@/components/table/footer";
-import ProductRows from "@/components/table/product_rows";
+import TitleColumn from "@/components/table/title_column";
 import ButtonPlus from "../button_plus";
-import ChoiceCategorie from "../choice_categories";
 import Table from "../table";
 
-const sections = {
-  left: [{ name: "Product" }],
-  center: ["Id", "Editor"],
-  right: ["Stock", "Price", "Actions"],
-};
+const left = [{ name: "Editor" }];
 
-const categories = ["All products", "Services", "Softwares", "Tools"];
-
-const products = [
+const categories = [
   {
-    productName: "Skyhost",
+    productName: "Services",
     productDate: "10 Nov 2023",
-    productId: "5089",
-    stock: 5,
+    product: 5,
   },
   {
-    productName: "Skytest",
+    productName: "Softwares",
     productDate: "10 Nov 2023",
-    productId: "5089",
-    stock: 15,
+    product: 15,
   },
   {
-    productName: "Skytest2",
+    productName: "Tools",
     productDate: "10 Nov 2023",
-    productId: "5089",
-    stock: 30,
+    product: 30,
   },
 ];
 
-export default function ProductCard() {
+export default function CategorieCard() {
   return (
     <Table
-      title="Product"
-      subtitle="In this section you can find all of your products"
+      title="Categories"
+      subtitle="In this section you can find the list of all categories"
     >
       <div className="flex flex-col gap-8 py-8">
         <div className="flex justify-between px-6">
@@ -50,7 +40,7 @@ export default function ProductCard() {
               className="bg-white/5 font-publicsans text-[15px]"
               name="10"
             />
-            <ButtonPlus text="Create Product" />
+            <ButtonPlus text="New Categorie" />
           </div>
           <div className="flex gap-4">
             <Input
@@ -66,10 +56,20 @@ export default function ProductCard() {
             />
           </div>
         </div>
-        <ChoiceCategorie categories={categories} />
         <div className="flex flex-col">
-          <Columns sections={sections} />
-          <ProductRows products={products} />
+          <div className="flex justify-between bg-white/5 px-6 py-2">
+            <div className="flex h-[35px] flex-shrink-0 items-center gap-[10px] uppercase tracking-[1px]">
+              {left.map((item, index) => (
+                <TitleColumn key={index} name={item.name} />
+              ))}
+            </div>
+            <div className="flex">
+              <TitleColumn name="Editor" className="mr-[80px]" />
+              <TitleColumn name="Product" className="mr-[40px]" />
+              <TitleColumn name="Actions" />
+            </div>
+          </div>
+          <CategorieRows categories={categories} />
         </div>
         <FooterTable />
       </div>

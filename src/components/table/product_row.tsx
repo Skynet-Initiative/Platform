@@ -4,19 +4,19 @@ import StockColumn from "@/components/table/columns/stock";
 import ProductInfos from "@/components/table/product_infos";
 import ProfilePP from "@/components/table/profile_pp";
 
-interface RowProps {
+export interface Product {
   productName: string;
   productDate: string;
   productId: string;
   stock: number;
 }
 
-const ProductRow: React.FC<RowProps> = ({
+export function ProductRow({
   productName,
   productDate,
   productId,
   stock,
-}) => {
+}: Product) {
   return (
     <div className="flex h-[81px] w-full items-center justify-between px-6">
       <ProductInfos name={productName} date={productDate} />
@@ -31,6 +31,4 @@ const ProductRow: React.FC<RowProps> = ({
       </div>
     </div>
   );
-};
-
-export default ProductRow;
+}
