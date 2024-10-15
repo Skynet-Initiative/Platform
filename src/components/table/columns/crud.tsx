@@ -1,14 +1,13 @@
-import VerticalDotsLogo from "@/assets/svg/crud/dots-vertical.svg";
-import EditLogo from "@/assets/svg/crud/edit.svg";
-import TrashLogo from "@/assets/svg/crud/trash.svg";
-import Image from "next/image";
+import VerticalDotsIcon from "@/assets/svg/crud/dots-vertical";
+import EditIcon from "@/assets/svg/crud/edit";
+import TrashIcon from "@/assets/svg/crud/trash";
 
 export default function CrudColumn() {
   return (
     <div className="flex gap-4">
-      <Image src={EditLogo} alt="" />
-      <Image src={TrashLogo} alt="" />
-      <Image src={VerticalDotsLogo} alt="" />
+      <EditIcon />
+      <TrashIcon />
+      <VerticalDotsIcon />
     </div>
   );
 }

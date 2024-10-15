@@ -1,11 +1,11 @@
 import Cube from "@/assets/svg/cube.svg";
-import Logo from "@/assets/svg/logo.svg";
+import Logo from "@/assets/svg/logo";
 import Image from "next/image";
 
 export default function PresentationSide() {
   return (
     <div className="flex w-[60%] flex-col items-center justify-center font-satoshi font-semibold">
-      <Image src={Logo} alt="Skynet" className="z-20" width={40} />
+      <Logo className="z-20" />
       <div className="flex flex-col items-center">
         <div className="h-[27rem] w-[32rem] flex-shrink-0 rotate-[-33deg] rounded-[506px] bg-[#0d275a] blur-[187px]"></div>
         <Image

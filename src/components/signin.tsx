@@ -1,5 +1,5 @@
+import SigninCard from "@/components/account/signin/card";
 import PresentationSide from "./presentationSide";
-import SigninCard from "./signin/card";
 
 export default function Signin() {
   return (

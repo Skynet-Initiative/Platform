@@ -2,9 +2,9 @@
 
 import EnglishFlag from "@/assets/images/flags/uk.png";
 import Chevron from "@/assets/svg/chevron";
-import NotificationImage from "@/assets/svg/notification.svg";
-import ProfileImage from "@/assets/svg/profile.svg";
-import SearchIcon from "@/assets/svg/search.svg";
+import NotifIcon from "@/assets/svg/notification";
+import ProfileIcon from "@/assets/svg/profile";
+import SearchIcon from "@/assets/svg/search";
 import Image from "next/image";
 import ChangeMod from "../../form/switchers/changeMod";
 
@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <div className="my-6 flex h-[3.25rem] flex-row justify-between">
       <div className="flex h-full w-[23rem] flex-row gap-[1.06rem] rounded-[1.25rem] bg-[rgba(39,40,85,0.4)]">
-        <Image src={SearchIcon} alt="" className="ml-[1.3rem] w-[1.6875rem]" />
+        <SearchIcon className="ml-[1.3rem] w-[1.6875rem]" />
         <input
           type="text"
           placeholder="Search..."
@@ -29,8 +29,8 @@ const Header = () => {
 
         <ChangeMod />
 
-        <Image src={NotificationImage} alt="" />
-        <Image src={ProfileImage} alt="" />
+        <NotifIcon />
+        <ProfileIcon />
         <a href="#">
           <div className="flex h-10 w-36 items-center justify-center rounded-3xl bg-blue-300 text-xs text-white">
             <p>JOIN NOW</p>

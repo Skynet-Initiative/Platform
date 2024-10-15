@@ -1,37 +1,35 @@
 "use client";
 
 import Chevron from "@/assets/svg/chevron";
-import PageKitImage from "@/assets/svg/navbar/brand-pagekit.svg";
-import ComponentsImage from "@/assets/svg/navbar/components.svg";
-import FileImage from "@/assets/svg/navbar/file-text.svg";
-import GamepadImage from "@/assets/svg/navbar/gamepad.svg";
-import HeadphonesImage from "@/assets/svg/navbar/headphones.svg";
-import MessageImage from "@/assets/svg/navbar/mobile-message.svg";
-import PointImage from "@/assets/svg/navbar/point.svg";
-import SettingsImage from "@/assets/svg/navbar/settings.svg";
-import ShoppingImage from "@/assets/svg/navbar/shopping.svg";
-import UsersImage from "@/assets/svg/navbar/users.svg";
-import { Bg } from "@/styles/colors";
-import Image from "next/image";
+import BrandIcon from "@/assets/svg/navbar/brand-pagekit";
+import ComponentsIcon from "@/assets/svg/navbar/components";
+import FileIcon from "@/assets/svg/navbar/file-text";
+import GamepadIcon from "@/assets/svg/navbar/gamepad";
+import HeadphonesIcon from "@/assets/svg/navbar/headphones";
+import MobileMessageIcon from "@/assets/svg/navbar/mobile-message";
+import PointIcon from "@/assets/svg/navbar/point";
+import SettingsIcon from "@/assets/svg/navbar/settings";
+import ShoppingIcon from "@/assets/svg/navbar/shopping";
+import UsersIcon from "@/assets/svg/navbar/users";
 import FullLogo from "./fullLogo";
 
 const categories = [
   {
     title: null,
     buttons: [
-      { image: ShoppingImage, label: "Store", link: "#" },
-      { image: GamepadImage, label: "Library", link: "#" },
-      { image: MessageImage, label: "Comms", link: "#" },
-      { image: PageKitImage, label: "Pages", link: "#" },
-      { image: ComponentsImage, label: "Pricing", link: "#" },
+      { image: <ShoppingIcon />, label: "Store", link: "#" },
+      { image: <GamepadIcon />, label: "Library", link: "#" },
+      { image: <MobileMessageIcon />, label: "Comms", link: "#" },
+      { image: <BrandIcon />, label: "Pages", link: "#" },
+      { image: <ComponentsIcon />, label: "Pricing", link: "#" },
     ],
   },
   {
     title: "Admin",
     buttons: [
-      { image: UsersImage, label: "Users Account", link: "#" },
-      { image: SettingsImage, label: "Roles & Permissions", link: "#" },
-      { image: PointImage, label: "Datatables", link: "#" },
+      { image: <UsersIcon />, label: "Users Account", link: "#" },
+      { image: <SettingsIcon />, label: "Roles & Permissions", link: "#" },
+      { image: <PointIcon />, label: "Datatables", link: "#" },
     ],
   },
   {
@@ -42,8 +40,8 @@ const categories = [
   {
     title: "Docs and help",
     buttons: [
-      { image: HeadphonesImage, label: "Support", link: "#" },
-      { image: FileImage, label: "Documentation", link: "#" },
+      { image: <HeadphonesIcon />, label: "Support", link: "#" },
+      { image: <FileIcon />, label: "Documentation", link: "#" },
     ],
   },
 ];
@@ -77,10 +75,10 @@ export default function Navbar() {
                   <style jsx>{`
                     a:hover {
                       border-radius: 6px;
-                      background: ${Bg.gradient[4]};
+                      background: bg-gradient-3;
                     }
                   `}</style>
-                  <Image src={button.image} width={22} alt={button.label} />
+                  {button.image}
                   <p className="font-public-sans flex-1 text-base font-medium normal-case leading-[22px] text-blue-100">
                     {button.label}
                   </p>

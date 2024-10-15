@@ -1,6 +1,5 @@
-import UploadImage from "@/assets/svg/upload.svg";
+import UploadIcon from "@/assets/svg/upload";
 import { Label } from "@/components/form/label";
-import Image from "next/image";
 import HeadCard from "../head_card";
 import Pagination from "../pagination";
 
@@ -26,7 +25,7 @@ export default function CardStoreCreate() {
           <div className="border_dashed flex h-[220px] w-full items-center justify-center font-satoshi text-white">
             <div className="flex flex-col gap-5">
               <div className="flex justify-center">
-                <Image src={UploadImage} alt="" />
+                <UploadIcon />
               </div>
               <div className="flex flex-col items-center gap-[10px]">
                 <p className="">Select a file or drag and drop here</p>

@@ -1,6 +1,6 @@
 import Chevron from "@/assets/svg/chevron";
-import ChevronBlackBlue from "@/assets/svg/chevron-blue-black";
 import { useState } from "react";
+import ChevronBlackBlue from "../../public/assets/svg/chevron-blue-black";
 
 export default function SortedChevron() {
   const [isSorted, setIsSorted] = useState(false);

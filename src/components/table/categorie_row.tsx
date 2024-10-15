@@ -1,9 +1,8 @@
 import ProductInfos from "@/components/table/product_infos";
 import ProfilePP from "@/components/table/profile_pp";
 
-import EditLogo from "@/assets/svg/crud/edit.svg";
-import TrashLogo from "@/assets/svg/crud/trash.svg";
-import Image from "next/image";
+import EditIcon from "@/assets/svg/crud/edit";
+import TrashIcon from "@/assets/svg/crud/trash";
 import StockColumn from "./columns/stock";
 
 export interface Categorie {
@@ -20,8 +19,8 @@ export function CategorieRow({ productName, productDate, product }: Categorie) {
         <ProfilePP className="mr-[80px]" />
         <StockColumn stock={product} className="mr-[125px]" />
         <div className="flex gap-4">
-          <Image src={EditLogo} alt="" />
-          <Image src={TrashLogo} alt="" />
+          <EditIcon />
+          <TrashIcon />
         </div>
       </div>
     </div>

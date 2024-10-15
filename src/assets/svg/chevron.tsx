@@ -1,3 +1,5 @@
+import React from "react";
+
 interface ChevronProps {
   stroke?: string;
   fill?: string;

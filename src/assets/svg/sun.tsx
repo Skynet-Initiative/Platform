@@ -1,3 +1,5 @@
+import React from "react";
+
 interface SunImage {
   stroke?: string;
   fill?: string;
