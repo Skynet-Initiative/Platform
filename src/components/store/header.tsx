@@ -6,12 +6,12 @@ import NotifIcon from "@/assets/svg/notification";
 import ProfileIcon from "@/assets/svg/profile";
 import SearchIcon from "@/assets/svg/search";
 import Image from "next/image";
-import ChangeMod from "../../form/switchers/changeMod";
+import ChangeMod from "../form/switchers/changeMod";
 
 const Header = () => {
   return (
     <div className="my-6 flex h-[3.25rem] flex-row justify-between">
-      <div className="flex h-full w-[23rem] flex-row gap-[1.06rem] rounded-[1.25rem] bg-[rgba(39,40,85,0.4)]">
+      <div className="flex h-full w-[23rem] flex-row items-center gap-[1.06rem] rounded-[1.25rem] bg-[rgba(39,40,85,0.4)]">
         <SearchIcon className="ml-[1.3rem] w-[1.6875rem]" />
         <input
           type="text"

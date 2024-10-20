@@ -1,3 +1,4 @@
+import Logo from "@/assets/svg/logo";
 import clsx from "clsx";
 interface FullLogoProps {
   width: number;
@@ -13,6 +14,7 @@ export default function FullLogo({
   return (
     <>
       <div className={clsx(className, `w-[${width}px]`)}>
+        <Logo className="h-[28px] w-[37px]" />
         <p
           className="font-satoshi font-bold normal-case leading-[22px] text-white"
           style={{ fontSize: text_size }}

@@ -11,6 +11,7 @@ import PointIcon from "@/assets/svg/navbar/point";
 import SettingsIcon from "@/assets/svg/navbar/settings";
 import ShoppingIcon from "@/assets/svg/navbar/shopping";
 import UsersIcon from "@/assets/svg/navbar/users";
+import clsx from "clsx";
 import FullLogo from "./fullLogo";
 
 const categories = [
@@ -50,7 +51,11 @@ export default function Navbar() {
   return (
     <div className="w-[20%] rounded-l-[0px] rounded-r-[20px] bg-gradient-3">
       <div className="my-10 inline-flex w-full flex-col items-center justify-center gap-2">
-        <FullLogo width={37} text_size={20} />
+        <FullLogo
+          width={37}
+          text_size={20}
+          className="flex flex-col items-center"
+        />
       </div>
 
       {categories.map((category, index) => (
@@ -68,18 +73,15 @@ export default function Navbar() {
             <div className="w-full">
               {category.buttons.map((button, idx) => (
                 <a
-                  className="flex items-center gap-[8px] self-stretch px-[16px] py-[9px]"
+                  className={clsx(
+                    "flex items-center gap-[8px] self-stretch rounded-[6px] px-[16px] py-[9px] text-blue-100",
+                    "hover:bg-gradient-4 hover:text-white",
+                  )}
                   href={button.link}
                   key={idx}
                 >
-                  <style jsx>{`
-                    a:hover {
-                      border-radius: 6px;
-                      background: bg-gradient-3;
-                    }
-                  `}</style>
                   {button.image}
-                  <p className="font-public-sans flex-1 text-base font-medium normal-case leading-[22px] text-blue-100">
+                  <p className="font-public-sans flex-1 text-base font-medium normal-case leading-[22px]">
                     {button.label}
                   </p>
                   {button.label === "Pages" && <Chevron />}

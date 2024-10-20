@@ -6,10 +6,10 @@ import React from "react";
 interface InputProps {
   type: string;
   placeholder: string;
+  name: string;
   value?: string;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   errorStyle?: string;
-  name: string;
   className?: string; // Ajout de la propriété className
 }
 

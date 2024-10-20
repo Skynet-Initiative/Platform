@@ -1,8 +1,7 @@
 import ProductInfos from "@/components/table/product_infos";
 import ProfilePP from "@/components/table/profile_pp";
 
-import EditIcon from "@/assets/svg/crud/edit";
-import TrashIcon from "@/assets/svg/crud/trash";
+import IconColumn from "./columns/crud";
 import StockColumn from "./columns/stock";
 
 export interface Categorie {
@@ -18,10 +17,7 @@ export function CategorieRow({ productName, productDate, product }: Categorie) {
       <div className="flex justify-between">
         <ProfilePP className="mr-[80px]" />
         <StockColumn stock={product} className="mr-[125px]" />
-        <div className="flex gap-4">
-          <EditIcon />
-          <TrashIcon />
-        </div>
+        <IconColumn nb_icons={[2, 3]} />
       </div>
     </div>
   );

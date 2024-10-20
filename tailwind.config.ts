@@ -15,7 +15,7 @@ const config: Config = {
         "gradient-3":
           "linear-gradient(182deg, rgba(16, 20, 192, 0.2) 22%, rgba(39, 40, 85, 0.2) 99%)",
         "gradient-4":
-          "linear-gradient(72deg,rgba(115, 103, 240, 0.3) 22.16%, rgba(115, 103, 240, 0.21) 76.47%)",
+          "linear-gradient(72deg, rgba(115, 103, 240, 0.30) 22.16%, rgba(115, 103, 240, 0.21) 76.47%)",
         "gradient-5": "linear-gradient(171deg, #0A0F1C 6.74%, #13203D 94.87%)",
       },
       fontFamily: {
@@ -26,10 +26,12 @@ const config: Config = {
       colors: {
         grey: {
           100: "#9a9eac",
+          150: "#A8AAAE",
           200: "#7a8092",
           300: "#333844",
         },
         blue: {
+          50: "#cfd3ec",
           100: "#8692D0",
           200: "#3da2ff",
           300: "#0074e4",
