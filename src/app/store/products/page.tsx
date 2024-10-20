@@ -1,6 +1,6 @@
 import Navbar from "@/components/navbar";
 import Footer from "@/components/store/create/footer";
-import Header from "@/components/store/create/header";
+import Header from "@/components/store/header";
 import ProductCard from "@/components/store/products/card";
 
 export default function CreatStore() {
