@@ -1,10 +1,11 @@
 "use client";
+import PlusIcon from "@/assets/svg/plus";
 import Input from "@/components//form/input";
+import Button from "@/components/button";
 import Selector from "@/components/form/selector";
 import Columns from "@/components/table/columns";
 import FooterTable from "@/components/table/footer";
 import ProductRows from "@/components/table/product_rows";
-import ButtonPlus from "../button_plus";
 import ChoiceCategorie from "../choice_categories";
 import Table from "../table";
 
@@ -45,12 +46,14 @@ export default function ProductCard() {
     >
       <div className="flex flex-col gap-8 py-8">
         <div className="flex justify-between px-6">
-          <div className="flex w-[285px] gap-[14px]">
-            <Selector
-              className="bg-white/5 font-publicsans text-[15px]"
-              name="10"
+          <div className="flex gap-[14px]">
+            <Selector className="bg-white/5 font-sans text-[15px]" name="10" />
+            <Button
+              Icon={PlusIcon}
+              name="New Product"
+              selected={true}
+              gap={3}
             />
-            <ButtonPlus text="Create Product" />
           </div>
           <div className="flex gap-4">
             <Input

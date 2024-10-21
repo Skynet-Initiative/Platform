@@ -1,6 +1,6 @@
 import Icon2FA from "@/assets/svg/account/2FA-icon.svg";
 import Image from "next/image";
-import Button from "../button";
+import Button from "../../../button";
 
 export default function Settings2FA() {
   return (

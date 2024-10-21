@@ -3,13 +3,22 @@ import { useState } from "react";
 
 interface ChoiceCategorieProps {
   categories: string[];
+  className?: string; // Ajout de la propriété className
 }
 
-export default function ChoiceCategorie({ categories }: ChoiceCategorieProps) {
+export default function ChoiceCategorie({
+  categories,
+  className,
+}: ChoiceCategorieProps) {
   const [selectedCategory, setSelectedCategory] = useState(categories[0]);
 
   return (
-    <div className="flex gap-4 px-6 text-[11px] font-bold uppercase">
+    <div
+      className={clsx(
+        "flex gap-4 px-6 text-[11px] font-bold uppercase text-white",
+        className,
+      )}
+    >
       {categories.map((category) => (
         <div
           key={category}

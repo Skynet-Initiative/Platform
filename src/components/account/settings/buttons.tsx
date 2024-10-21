@@ -4,7 +4,7 @@ import SecurityIcon from "@/assets/svg/account/security";
 import UsersIcon from "@/assets/svg/navbar/users";
 import { usePathname, useRouter } from "next/navigation"; // Utilisez usePathname ici
 import { useEffect, useState } from "react";
-import Button from "./button";
+import Button from "../../button";
 
 interface ButtonsProps {
   children: React.ReactNode;

@@ -1,6 +1,6 @@
 "use client";
 import PlusIcon from "@/assets/svg/plus";
-import Button from "@/components/account/settings/button";
+import Button from "@/components/button";
 import FooterTable from "@/components/table/footer";
 import Table from "../table";
 import CouponList from "./columns";
@@ -38,7 +38,7 @@ export default function CouponCard() {
     >
       <div className="flex flex-col gap-8 py-8">
         <div className="flex px-[24px]">
-          <Button Icon={PlusIcon} name="New Coupons" selected={true} gap={6} />
+          <Button Icon={PlusIcon} name="New Coupons" selected={true} gap={3} />
         </div>
         <div>
           <CouponsColumns />

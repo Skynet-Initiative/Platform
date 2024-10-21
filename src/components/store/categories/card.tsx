@@ -1,10 +1,11 @@
 "use client";
+import PlusIcon from "@/assets/svg/plus";
 import Input from "@/components//form/input";
+import Button from "@/components/button";
 import Selector from "@/components/form/selector";
 import CategorieRows from "@/components/table/categorie_rows";
 import FooterTable from "@/components/table/footer";
 import TitleColumn from "@/components/table/title_column";
-import ButtonPlus from "../button_plus";
 import Table from "../table";
 
 const left = [{ name: "Editor" }];
@@ -35,12 +36,17 @@ export default function CategorieCard() {
     >
       <div className="flex flex-col gap-8 py-8">
         <div className="flex justify-between px-6">
-          <div className="flex w-[285px] gap-[14px]">
+          <div className="flex gap-[14px]">
             <Selector
               className="bg-white/5 font-publicsans text-[15px]"
               name="10"
             />
-            <ButtonPlus text="New Categorie" />
+            <Button
+              Icon={PlusIcon}
+              name="New Categorie"
+              selected={true}
+              gap={3}
+            />
           </div>
           <div className="flex gap-4">
             <Input

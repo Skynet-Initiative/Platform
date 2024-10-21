@@ -16,10 +16,10 @@ export default function Button({
   name,
   Icon,
   width_icon = 24,
-  gap,
+  gap = 6, // Ajout d'une valeur par défaut pour le gap
   selected = false,
   className,
-  onClick, // Prend onClick comme propriété
+  onClick,
 }: ButtonProps) {
   const color_default = "white/60";
   const color_default_css = "rgba(255, 255, 255, 0.6)";
@@ -30,13 +30,14 @@ export default function Button({
     <div
       className={clsx(
         "flex cursor-pointer items-center rounded-[6px] px-5 py-[10px]",
-        `gap-[${gap}px]`,
+        `gap-${gap}`,
         selected
           ? `bg-${bg_color_select} text-${color_select}`
           : `text-${color_default}`,
         className,
+        "whitespace-nowrap", // Empêche le retour à la ligne
       )}
-      onClick={onClick} // Ajout de l'événement onClick
+      onClick={onClick}
     >
       {Icon && (
         <Icon

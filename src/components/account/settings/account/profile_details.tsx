@@ -3,7 +3,7 @@ import UploadIcon from "@/assets/svg/account/upload";
 import Input from "@/components/form/input";
 import Selector from "@/components/form/selector";
 import Image from "next/image";
-import Button from "../button";
+import Button from "../../../button";
 import SubmitButtons from "../submit_buttons";
 
 export default function ProfileDetails() {
