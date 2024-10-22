@@ -1,5 +1,5 @@
 "use client";
-import StorePP from "@/assets/svg/store/PP.svg";
+import IncPP from "@/assets/svg/inc/PP.svg";
 import Image from "next/image";
 import NbStars from "../nb_stars";
 import Review from "./review";
@@ -8,9 +8,9 @@ export default function ReviewCard() {
   return (
     <div className="flex flex-col gap-[71px]">
       <div className="mt-[29px] flex justify-start gap-[39px]">
-        <Image src={StorePP} alt="" />
+        <Image src={IncPP} alt="" />
         <div className="inline-flex flex-col items-start justify-between">
-          <div className="flex flex-col items-start justify-between leading-relaxed">
+          <div className="flex h-[62px] flex-col items-start justify-between leading-relaxed">
             <p className="text-xs font-medium text-[#0074e4]">SERVICES</p>
             <p className="text-xl font-bold text-white">Skynet Services</p>
           </div>

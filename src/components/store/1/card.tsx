@@ -21,7 +21,7 @@ export default function ProfileStore() {
       <div className="mt-[29px] flex justify-start gap-[39px]">
         <Image src={StorePP} alt="" />
         <div className="inline-flex h-[107.48px] flex-col items-start justify-start gap-[15px]">
-          <div className="flex flex-col items-start justify-between leading-relaxed">
+          <div className="flex h-[62px] flex-col items-start justify-between leading-relaxed">
             <p className="text-xs font-medium text-[#0074e4]">SERVICES</p>
             <p className="text-xl font-bold text-white">Plumbwizard</p>
           </div>
